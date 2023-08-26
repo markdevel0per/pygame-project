@@ -68,6 +68,8 @@ class Hero(pygame.sprite.Sprite):
 
 class Enemy(pygame.sprite.Sprite):
     """Flies and snails in the main game loop"""
+
+    
     def __init__(self, type):
         super().__init__()
         if type == 'fly':
@@ -103,9 +105,9 @@ class Enemy(pygame.sprite.Sprite):
 
 
     def update(self):
+        # all functions
         self.animation()
-        # movement
-        self.rect.x -= 6
+        self.rect.x -= 6 # movement
         self.destroy()
 
 
