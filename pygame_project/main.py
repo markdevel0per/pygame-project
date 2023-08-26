@@ -197,6 +197,6 @@ while loop:
                     game_active = True
                     start_time = int(pygame.time.get_ticks() / 1000)
 
-    # other trash
+    # other
     pygame.display.update()
     clock.tick(60)
